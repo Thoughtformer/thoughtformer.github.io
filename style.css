@@ -53,7 +53,7 @@ h3 {
 h1 {
   max-width: 760px;
   margin-bottom: 1.5rem;
-  font-size: clamp(3.2rem, 8vw, 6.8rem);
+  font-size: clamp(3.2rem, 6vw, 6rem);
   font-weight: 760;
 }
 
@@ -88,6 +88,7 @@ h3 {
 }
 
 .brand {
+  font-size: 0.94rem;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
@@ -96,7 +97,7 @@ nav {
   display: flex;
   gap: 1.35rem;
   color: var(--muted);
-  font-size: 0.94rem;
+  font-size: 0.98rem;
 }
 
 nav a,
@@ -122,7 +123,7 @@ nav a:hover,
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(300px, 0.75fr);
   gap: 5rem;
-  align-items: end;
+  align-items: center;
 }
 
 .eyebrow,
