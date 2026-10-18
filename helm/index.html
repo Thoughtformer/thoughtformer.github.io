@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Helm: Aaron Spoonts' independent, AI-assisted learning project in practical AI governance and safety. Questions, observations, milestones, and honest limitations.">
+  <title>Helm | Aaron Spoonts</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .research-hero {padding:6rem 0 4rem}
+    .research-hero h1 {max-width:950px;font-size:clamp(2.6rem,6vw,5rem)}
+    .reading {max-width:780px}
+    .reading p,.question p,.lesson p {color:var(--muted)}
+    .reading strong,.question strong,.lesson strong {color:var(--text)}
+    .questions {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem;margin-top:2rem}
+    .question {padding:1.6rem;border:1px solid var(--line);border-radius:var(--radius);background:var(--surface)}
+    .question h3 {font-size:1.4rem;line-height:1.3}
+    .lesson {padding:1.5rem 0;border-top:1px solid var(--line)}
+    .lesson h3 {font-size:1.4rem;line-height:1.3}
+    .status {display:inline-block;margin-bottom:1.5rem;padding:.35rem .8rem;border:1px solid var(--line);border-radius:2rem;color:var(--accent);font-size:.82rem}
+    .timeline {list-style:none;padding:0}
+    .timeline li {padding:1.5rem 0 1.5rem 1.25rem;border-left:2px solid var(--line)}
+    .timeline time {display:block;color:var(--accent);font-size:.85rem}
+    a:focus-visible {outline:2px solid var(--accent);outline-offset:5px}
+    @media(max-width:700px){.questions{grid-template-columns:1fr}.research-hero{padding:3rem 0}}
+  </style>
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+  <a class="brand" href="../">Aaron Spoonts / Helm</a>
+  <nav aria-label="Project navigation"><a href="#questions">Questions</a><a href="#observations">Observations</a><a href="#milestones">Milestones</a><a href="#limits">Limits</a></nav>
+</div></header>
+<main>
+<section class="research-hero"><div class="container">
+  <p class="eyebrow">Independent research &amp; learning project</p>
+  <span class="status">Ongoing · AI-assisted · Early prototype</span>
+  <h1>How can AI-assisted work remain accountable to people?</h1>
+  <p class="hero-copy reading">Helm is how I am exploring that question through building, testing,
+    and documenting a small automation system. I am sharing the work as a learning journey,
+    including the parts that have not worked.</p>
+  <div class="hero-actions"><a class="button primary" href="https://github.com/Thoughtformer/helm-research">Read the GitHub showcase</a><a class="button secondary" href="../">My personal portfolio</a></div>
+</div></section>
+<section class="section"><div class="container split">
+  <div><p class="section-kicker">Why this project</p><h2>Practical experience.<br>A learner's mindset.</h2></div>
+  <div class="body-copy">
+    <p>I am Aaron Spoonts. My background spans technical systems, electronics repair and refurbishment,
+      data, and creative technology. I am working toward a meaningful career transition into AI-related work.</p>
+    <p>I tend to stay with difficult problems, listen to feedback, and keep searching for a workable
+      solution. Helm gives that persistence a direction while I develop my programming skills,
+      research methods, and understanding of AI governance and safety.</p>
+    <p><strong>My role:</strong> setting direction and constraints, testing workflows, reviewing
+      decisions, identifying failures, and guiding revisions. AI tools contribute substantially
+      to implementation and writing, including this presentation. I do not claim independent
+      authorship of every implementation or established AI research expertise.</p>
+  </div>
+</div></section>
+<section id="questions" class="section section-alt"><div class="container">
+  <p class="section-kicker">Research questions</p><h2>What I want to understand.</h2>
+  <div class="questions">
+    <article class="question"><h3>Who actually has authority?</h3><p>Can a model propose work without being able to expand its own tool, network, or file permissions?</p></article>
+    <article class="question"><h3>What does approval authorize?</h3><p>Can a person's approval stay bound to the exact consequential action they reviewed?</p></article>
+    <article class="question"><h3>What counts as success?</h3><p>How do we distinguish a confident statement, a completed request, a checked result, and something useful?</p></article>
+    <article class="question"><h3>Does the extra machinery help?</h3><p>Does orchestration improve outcomes when resource access, human effort, cost, latency, and failures are counted fairly?</p></article>
+    <article class="question"><h3>Can a person understand the limits?</h3><p>Does the interface make permissions, incomplete outputs, and uncertainty clear enough for meaningful oversight?</p></article>
+    <article class="question"><h3>Can we learn from inconvenient results?</h3><p>Can failed attempts remain visible and change the next decision, instead of being rewritten as progress?</p></article>
+  </div>
+</div></section>
+<section id="observations" class="section"><div class="container reading">
+  <p class="section-kicker">Selected observations</p><h2>What has challenged the assumptions.</h2>
+  <p>These are summaries of private development records. This public showcase does not include
+    the implementation or raw evaluation data, so the observations cannot be independently
+    reproduced from this page. They are not new results from publishing this presentation.</p>
+  <article class="lesson"><h3>A functioning runtime did not establish a capable worker.</h3>
+    <p>The project developed bounded execution and evidence paths while general worker competence
+      remained unqualified. <strong>The lesson:</strong> runtime success and task correctness
+      need separate evidence.</p></article>
+  <article class="lesson"><h3>A planning response did not produce a usable plan.</h3>
+    <p>A request ended at its output limit. Later local validation work and synthetic tests did
+      not establish successful live planning. <strong>The lesson:</strong> incomplete output
+      must remain visibly incomplete.</p></article>
+  <article class="lesson"><h3>An apparent advantage had confounded conditions.</h3>
+    <p>Early bounded workflow comparisons included unequal tool access and narrow fixtures.
+      <strong>The lesson:</strong> those observations cannot support general superiority or
+      economic-savings claims.</p></article>
+  <article class="lesson"><h3>Passing tests did not establish an accepted product.</h3>
+    <p>Interface and provider work coexisted with installer restrictions and wider test failures.
+      <strong>The lesson:</strong> a usable experience needs its own evidence.</p></article>
+  <a class="text-link" href="https://github.com/Thoughtformer/helm-research/blob/main/RESEARCH_NOTES.md">Read the questions, case notes, and limits →</a>
+</div></section>
+<section id="milestones" class="section section-alt"><div class="container reading">
+  <p class="section-kicker">Selected milestones</p><h2>A record of work and revision.</h2>
+  <ol class="timeline">
+    <li><time>September 2026</time><h3>Started with existing resources.</h3><p>Explored practical automation and upstream software reuse before adding more infrastructure.</p></li>
+    <li><time>Early October 2026</time><h3>Built bounded control and workflow prototypes.</h3><p>Developed execution, verification, and interface work while preserving unknown qualification states and documenting failures.</p></li>
+    <li><time>October 2026</time><h3>Encountered the gap between prototypes and usefulness.</h3><p>Recorded incomplete planning, confounded comparisons, and installation limits rather than treating them as solved.</p></li>
+    <li><time>October 18, 2026</time><h3>Made the learning purpose explicit.</h3><p>Published this curated account of the questions, contribution, AI assistance, and limitations. This is a documentation milestone, not a new experiment.</p></li>
+  </ol>
+</div></section>
+<section id="limits" class="section"><div class="container split">
+  <div><p class="section-kicker">Scope and honesty</p><h2>Work in progress.<br>Limits in view.</h2></div>
+  <div class="body-copy">
+    <p><strong>Helm</strong> is the project and human-facing layer. <strong>Escapement</strong>
+      is its underlying control layer. The implementation reuses upstream software, including
+      StarNet, with its own attribution boundaries.</p>
+    <p>This is an exploratory project, not a finished safety system, peer-reviewed publication,
+      compliance certification, or production-ready general agent platform. Readiness remains
+      unknown and adaptive routing is not qualified.</p>
+    <p>Here, governance means practical authority and accountability in a small system.
+      It does not establish institutional policy expertise or a solution to frontier AI risks.</p>
+    <p>I want to grow through careful experiments, better programming, and feedback from
+      experienced people. The aim is to become useful through the work—not to present the
+      learning as already complete.</p>
+  </div>
+</div></section>
+<section class="section section-alt"><div class="container reading">
+  <p class="section-kicker">Explore the work</p><h2>Questions welcome.</h2>
+  <p>I am looking for meaningful technical work where I can contribute persistence and
+    practical problem-solving while listening, learning, and taking on deeper challenges.</p>
+  <div class="hero-actions"><a class="button primary" href="https://github.com/Thoughtformer/helm-research">Helm on GitHub</a><a class="button secondary" href="../">Personal portfolio</a><a class="button secondary" href="https://github.com/Thoughtformer">GitHub profile</a></div>
+</div></section>
+</main><footer><div class="container footer-wrap"><span>© 2026 Aaron Spoonts</span><span>Last editorial update: October 18, 2026 · AI-assisted presentation</span></div></footer>
+</body></html>
