@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OpenSorts is Aaron Spoonts' AI-assisted exploration of a more approachable way to discover and adapt open-source software. Prototype progress, design goals, and limits.">
+  <title>OpenSorts | Aaron Spoonts</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    .project-hero { padding: 6rem 0 4rem; }
+    .project-hero h1 { max-width: 920px; font-size: clamp(2.8rem, 6vw, 5rem); }
+    .reading { max-width: 800px; }
+    .reading p, .detail p { color: var(--muted); }
+    .reading strong { color: var(--text); }
+    .details { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-top: 2rem; }
+    .detail { padding: 1.6rem; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+    .detail h3 { font-size: 1.3rem; }
+    .status { display: inline-block; margin-bottom: 1.5rem; padding: .35rem .8rem; border: 1px solid var(--line); border-radius: 2rem; color: var(--accent); font-size: .82rem; }
+    a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+    @media (max-width: 700px) { .details { grid-template-columns: 1fr; } .project-hero { padding: 3rem 0; } }
+  </style>
+</head>
+<body>
+<header class="site-header"><div class="container nav-wrap">
+  <a class="brand" href="../">Aaron Spoonts / OpenSorts</a>
+  <nav aria-label="Project navigation"><a href="#idea">The idea</a><a href="#prototype">Prototype</a><a href="#next">Next steps</a><a href="#limits">Limits</a></nav>
+</div></header>
+<main>
+  <section class="project-hero"><div class="container">
+    <p class="eyebrow">Independent product exploration</p>
+    <span class="status">Early prototype · AI-assisted development · Work in progress</span>
+    <h1>Discover what exists.<br>Imagine what it could become.</h1>
+    <p class="hero-copy reading">OpenSorts is my exploration of making open-source software more approachable to people who have ideas but don't necessarily know how to find, evaluate, or adapt code. The longer-term ambition is to help someone start with an idea, discover useful foundations, and shape a result through ordinary language.</p>
+    <div class="hero-actions"><a class="button primary" href="#prototype">Current progress</a><a class="button secondary" href="../">Back to portfolio</a></div>
+  </div></section>
+  <section id="idea" class="section"><div class="container split">
+    <div><p class="section-kicker">Why this interests me</p><h2>Good tools should not be hidden behind unnecessary barriers.</h2></div>
+    <div class="body-copy">
+      <p>There is an enormous amount of useful, creative work in open-source projects. For someone without development experience, the difficulty often begins before they can even decide whether a project is right for them.</p>
+      <p>I want to explore an experience that begins with what someone wants to accomplish, not with a command line or repository browser. It should help people understand possible starting points while being transparent about source licenses, compatibility, and what has actually been verified.</p>
+      <p>The larger concept has three entrances: describe an idea, browse projects that catch your attention, or select several foundations and explore what they could become together. Combining unrelated software is not assumed to work automatically.</p>
+    </div>
+  </div></section>
+  <section id="prototype" class="section section-alt"><div class="container">
+    <p class="section-kicker">What exists today</p><h2>Discovery first, creation later.</h2>
+    <p class="hero-copy reading">The in-development workspace has moved beyond an idea on paper. Its current branch includes a browser interface and live read-only project discovery. Recent pull-request notes document type checking, 24 passing tests, a production build, and local browser checks. These are development checks, not proof of a production service.</p>
+    <div class="details">
+      <article class="detail"><h3>Explore real projects</h3><p>Search public GitHub and GitLab repositories, browse outcome-based categories, and refine loaded results by available metadata. Source links remain available.</p></article>
+      <article class="detail"><h3>Keep promising foundations</h3><p>Bookmark projects, select multiple starting points, save ideas and conversation notes in the browser, and export workspace information as JSON.</p></article>
+      <article class="detail"><h3>Inspect available evidence</h3><p>GitHub project details can include a pinned source revision, README and license information, and attributed documentation previews. Unknowns remain labeled as unknowns.</p></article>
+      <article class="detail"><h3>Design for people</h3><p>The interface organizes projects around what someone might want to do rather than expecting them to know programming languages or source-host terminology.</p></article>
+    </div>
+  </div></section>
+  <section id="next" class="section"><div class="container split">
+    <div><p class="section-kicker">Where it could go</p><h2>From finding a foundation to making something personal.</h2></div>
+    <div class="body-copy">
+      <p>Next research areas include stronger source inspection, more reliable evidence about reuse rights, and practical planning for combinations of projects. The eventual goal is a constrained path for making and testing real changes in an isolated environment, with recovery and export.</p>
+      <p>Those capabilities are proposals, not features of the current prototype. I want to test the core experience and its limitations before promising an autonomous development platform.</p>
+    </div>
+  </div></section>
+  <section id="limits" class="section section-alt"><div class="container split">
+    <div><p class="section-kicker">Scope and contribution</p><h2>An experiment, not a finished service.</h2></div>
+    <div class="body-copy">
+      <p><strong>Current limits:</strong> No AI-driven code modification, arbitrary-code execution, hosted user accounts, billing, or production readiness has been established. Conversational guidance is currently template-based. Workspace data is browser-local, and discovery depends on source-host APIs and their limits.</p>
+      <p><strong>My contribution:</strong> I define the product direction, requirements, constraints, workflows, and design priorities; evaluate behavior; and guide revisions. AI tools provide substantial implementation and writing assistance. I am learning through the work, not claiming independent authorship of all its code.</p>
+      <p>The implementation repository is private while the project evolves. This page describes the current development work without exposing private source or presenting planned capabilities as operational.</p>
+      <div class="hero-actions"><a class="button secondary" href="../#work">Other projects</a><a class="button secondary" href="https://github.com/Thoughtformer">GitHub profile</a></div>
+    </div>
+  </div></section>
+</main>
+<footer><div class="container footer-wrap"><span>© 2026 Aaron Spoonts</span><span>Updated November 2026 · AI-assisted presentation</span></div></footer>
+</body>
+</html>
