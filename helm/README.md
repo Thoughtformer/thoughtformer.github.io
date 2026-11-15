@@ -1,5 +1,5 @@
-# Helm project overview
+# AI systems research case study
 
-[Read the public research showcase](https://github.com/Thoughtformer/helm-research) · [View the HTML presentation](https://thoughtformer.github.io/helm/) · [Personal portfolio](https://thoughtformer.github.io/)
+[View the case study](https://thoughtformer.github.io/helm/) · [Public research notes](https://github.com/Thoughtformer/helm-research) · [Portfolio](https://thoughtformer.github.io/)
 
-This directory contains the presentation page only. The public showcase contains the contribution statement, research notes, and limitations. The implementation remains private.
+This directory retains the historical `/helm/` URL so existing links continue to work. The current page describes a 2026 AI systems research effort rather than a commercial product. Helm and Escapement are historical internal labels only. The private source and original evidence have not been published.
